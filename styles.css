@@ -1,0 +1,299 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* font-family: "Lora", serif;
+  font-family: "Poppins", sans-serif; */
+  font-family: "Roboto", sans-serif;
+}
+
+/* header styles */
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 6em;
+  background-color: #171717;
+}
+
+ul {
+  list-style: none;
+}
+
+.headerLogo h1 {
+  font-size: 20px;
+  font-weight: 900;
+  cursor: pointer;
+  color: #fff;
+  font-style: italic;
+}
+
+.headerNavLinks ul {
+  display: flex;
+  gap: 2em;
+}
+
+.headerNavLinks ul li {
+  cursor: pointer;
+  color: gray;
+}
+
+#specialNav {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 1px;
+  color: white;
+}
+
+#headerSup {
+  background-color: red;
+  height: 3px;
+  width: 5px;
+  border-radius: 50%;
+  padding: 4px;
+}
+
+.headerCartSearch ul {
+  display: flex;
+  justify-content: space-between;
+  gap: 1em;
+  align-items: center;
+  color: white;
+}
+
+#specialCart {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 1px;
+}
+
+#headerSupp {
+  background-color: red;
+  border-radius: 50%;
+  padding: 4px;
+  font-size: 10px;
+  height: 18px;
+  width: 14px;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.headerDivider {
+  width: 2px;
+  background-color: #ccc;
+  border-radius: 4px;
+  height: 30px;
+}
+
+.headerCartSearch span {
+  font-size: 24px;
+  cursor: pointer;
+  color: white;
+}
+
+/* hero section */
+.hero {
+  padding: 20px 6em;
+  background-color: #171717;
+}
+
+.heroLabel {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  font-size: 4em;
+  text-align: center;
+  justify-content: center;
+  padding: 10px 30px;
+  color: white;
+}
+
+#heroLabelSpecial {
+  background-color: red;
+  color: white;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  padding: 6px;
+}
+
+.heroText {
+  color: rgb(129, 128, 128);
+  text-align: center;
+  margin-top: 1em;
+}
+
+.heroImage {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-top: 3em;
+}
+
+.heroImage img {
+  border-radius: 20px;
+  height: 600px;
+  width: 100%;
+}
+
+.heroImageStats {
+  margin-top: 18px;
+}
+
+.heroImageStats span {
+  color: white;
+}
+
+.heroImageStats p {
+  color: rgb(129, 128, 128);
+  margin-top: 80px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+/* footer styles */
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px 6em;
+  background-color: #171717;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footerLeft {
+  flex: 0.5;
+}
+
+.footerLeft h2 {
+  color: white;
+  font: bolder;
+  font-size: 2em;
+}
+
+.footerExplore {
+  background-color: red;
+  color: white;
+  margin-top: 2em;
+  width: 50%;
+  padding: 15px 24px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.footerRight {
+  flex: 0.5;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 1em;
+}
+
+.footerRightOne {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  flex: 0.5;
+  margin-top: 1.5em;
+}
+
+.rightOneItemOne {
+  background-color: red;
+  color: white;
+  padding: 1em 1.3em;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.rightOneItemOne h1 {
+  margin-bottom: 1em;
+  font-weight: 900;
+  letter-spacing: 1px;
+  font-style: italic;
+}
+
+.rightOneItemTwo {
+  color: white;
+  padding: 1em 1.3em;
+  text-align: center;
+  border-radius: 8px;
+  border: 1px solid #cccc;
+}
+
+.rightOneItemTwo h1 {
+  margin-bottom: 1em;
+  font-weight: 900;
+  letter-spacing: 1px;
+  font-style: italic;
+}
+
+.footerRightTwo {
+  flex: 0.5;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.rightTwoItemOne {
+  color: white;
+  padding: 1em 1.3em;
+  text-align: center;
+  border-radius: 8px;
+  border: 1px solid #cccc;
+}
+
+.rightTwoItemOne h1 {
+  margin-bottom: 1em;
+  font-weight: 900;
+  letter-spacing: 1px;
+  font-style: italic;
+}
+
+.rightTwoItemTwo {
+  color: white;
+  padding: 1em 1.3em;
+  text-align: center;
+  border-radius: 8px;
+  border: 1px solid #cccc;
+}
+
+.rightTwoItemTwo h1 {
+  margin-bottom: 1em;
+  font-weight: 900;
+  letter-spacing: 1px;
+  font-style: italic;
+}
+
+/* media queries */
+@media (max-width: 700px) {
+  .headerNavLinks {
+    display: none;
+  }
+
+  .header {
+    padding: 20px 10px;
+  }
+
+  .hero {
+    padding: 20px 10px;
+  }
+
+  .heroLabel {
+    font-size: 1em;
+    padding: 10px 20px;
+  }
+
+  .heroMainImage img {
+    object-fit: cover;
+  }
+
+  .footer {
+    padding: 20px 10px;
+    display: block;
+  }
+
+  .footerRight {
+    display: block;
+  }
+}
